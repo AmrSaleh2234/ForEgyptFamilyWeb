@@ -398,6 +398,9 @@ a h4:hover {
   z-index: 1;
 }
 
+
+
+
 @media (max-width: 991px) {
   .overflow-md-hidden {
     overflow: hidden;
@@ -532,6 +535,10 @@ textarea.form-control {
   transition: transform 0.3s ease;
   pointer-events: none;
 }
+.navbar-brand
+{
+  font-size: 24px;
+}
 @media (max-width: 991px) {
   .nav-item::before {
     opacity: 0.1;
@@ -550,6 +557,18 @@ textarea.form-control {
 {
   width: 79px;
   margin-left: 19px;
+}
+@media (max-width: 700px) {
+  .navbar-brand
+  {
+    font-size: 11px;
+  }
+  .navbar-brand  img
+  {
+    width: 58px !important;
+    margin-left: 9px !important;
+
+  }
 }
 
 link:focus,
@@ -948,7 +967,19 @@ link:focus,
   border-color: #494a43 !important;
   padding-top: 275px;
 }
+@media (max-width: 700px) {
+  .footer-container
+  {
+    flex-direction: column;
+  }
+  .footer-container ul{
+    text-align: center;
+  }
+  .copyright p{
+    padding-left: 15px;
+  }
 
+}
 /* /footer */
 .filter-controls li {
   cursor: pointer;
@@ -960,5 +991,9 @@ link:focus,
 }
 .filter-controls li:hover {
   color: #ffbc3b;
+}
+.copyright p a:hover
+{
+  color: rgba(255, 188, 59, 0.48) !important;
 }
 /*# sourceMappingURL=style.css.map */
